@@ -4,18 +4,149 @@
     box-sizing: border-box;
 }
 
-/* shared style */
-
 .font-work-sans {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
 }
 
-header {
-    padding: 50px 240px;
+/* shared style */
+
+/* .display-flex {
+    display: flex;
+} */
+
+.bg-primary {
+    background-color: rgba(255, 144, 14, 0.1);
 }
 
-header nav {
-    border: 1px solid red;
-    /* max-width: ; */
+.btn {
+    background-color: #FF900E;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    border-radius: 8px;
+}
+
+/* main style */
+
+header {
+    padding: 50px 0;
+}
+
+.navbar {
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+/* bannner and navabr common designs */
+
+.navbar, .banner, .banner-image {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* banner styles */
+
+.banner-content {
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.banner-description {
+    color: #727272;
+    font-size: 1rem;
+    margin: 2rem 0;
+    max-width: 868px;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+/* team section design */
+
+ .team {
+    max-width: 1318px;
+    margin: 130px auto;
+ }
+
+.team-container {
+    display: flex;
+    align-items: center;
+    gap: 73px;
+}
+
+.team-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.team-conntent .team-info {
+    max-width: 537px;
+    width: 537px;
+    text-align: left;
+}
+
+.first {
+    color: #727272;
+    font-size: 2.8125rem;
+    font-weight: 500;
+}
+
+.second {
+    color: #131313;
+    font-size: 2.8125rem;
+    font-weight: bold;
+}
+
+.third {
+    color: #FF900E;
+    font-size: 2.8125rem;
+    font-weight: bold;
+}
+
+.team-title {
+    margin-bottom: 1.5rem;
+}
+
+.team-description {
+    color: #727272;
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
